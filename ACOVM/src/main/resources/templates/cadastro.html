@@ -12,12 +12,19 @@
 
 </head>
 <body>
-	<h1>Bem vindo ao Sistema da Beleza</h1>
-	<p>
-		<span>Menu</span><br /> <a th:href="@{/cadastrar}"><span>Cadastro
-				de Clientes</span></a><br /> <span>Listagem de Clientes</span><br />
+	<h1>Fomulário de Cadastro de um Cliente</h1><br />
+	
+	<!--  action é para onde eu vou enviar os dados do meu formulário -->
+	<form th:action="@{/cadastrar}" method="post">
+		<input name="nome" placeholder="nome do cliente" /> <br />
+		<input name="" placeholder="telefone" /><br />
+		<input name="" placeholder="endereço do meu cliente" /><br />
+		<input name="cPF" placeholder="CPF" /><br />
+		<input type="submit" />
+		
 
-	</p>
+	</form>
+	<p></p>
 	<script th:src="@{webjars/jquery/jquery.mim.js}"></script>
 	<script th:src="@{webjars/bootstrap/js/bootstrap.mim.js}"></script>
 
